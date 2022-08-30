@@ -1,0 +1,90 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------- */
+
+.intro {
+  height: 100vh;
+  background-image: url("../assets/intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -56px;
+  /* Animation */
+  /* animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none; */
+}
+
+.intro-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-border {
+  height: 250px;
+  width: 700px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  border: 5px solid #eaeaea;
+
+  animation-name: focus-in-contract;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.welcome-border > h1 {
+  font-family: "AmelaryasFont", Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: #eaeaea;
+}
+
+.welcome-border > h2 {
+  font-family: "AmelaryasFont", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #eaeaea;
+}
+
+/* Mobile Phone Screen Adjustment */
+
+@media screen and (max-width: 800px) {
+  .welcome-border {
+    width: 80%;
+  }
+  .welcome-border > h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-border > h2 {
+    font-size: 15px;
+  }
+}

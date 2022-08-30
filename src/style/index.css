@@ -1,0 +1,8 @@
+.root {
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "AmelaryasFont";
+  src: url("../assets/Amelaryas.ttf");
+}
