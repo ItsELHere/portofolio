@@ -110,7 +110,7 @@ function Home() {
               src={require("../assets/dummyProject.jpg")}
               width={"50%"}
               height={"80%"}
-              alt=""
+              alt="dummy project"
             />
           </div>
         </div>
